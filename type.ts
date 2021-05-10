@@ -95,3 +95,9 @@ const cloth: {
 // エイリアス型。型の変数を作成することができる。
 type ClothSize = 'small' | 'medium' | 'large';
 let clothSizes: ClothSize = 'large';
+
+
+// 関数に型をつける。
+function add(num1: number, num2: number): number {
+  return num1 + num2
+}
