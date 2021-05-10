@@ -36,7 +36,6 @@ const person: {
   name:'Jack',
   age: 21
 }
-console.log(person.name);
 
 // 配列型
 const fruits: string[] = ['aple','banana','grape']
@@ -50,6 +49,20 @@ const book: [string,number, boolean] = ['business', 1500, false];
 // book.push[21];
 // console.log(book[3]);
 
+// 列挙型（イーナム型）の記述方法。
+// 宣言はキャメルケースを使用する。
+// enumの中に文字列を指定しなければ添字のようなものが入る。
+enum CoffeeSize {
+  SHORT = 'SHORT',
+  TALL = 'TALL',
+  GRANDE = 'GRANDE',
+  VENTI = 'VENTI'
+}
+
+const coffee = {
+  hot: true,
+  size:CoffeeSize.GRANDE
+}
 
 
 

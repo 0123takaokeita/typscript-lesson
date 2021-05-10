@@ -24,7 +24,6 @@ var person = {
     name: 'Jack',
     age: 21
 };
-console.log(person.name);
 // 配列型
 var fruits = ['aple', 'banana', 'grape'];
 var fruit = fruits[0];
@@ -33,5 +32,21 @@ fruit.length;
 // tuple型を使用して順番を固定できる。
 var book = ['business', 1500, false];
 // ここではエラーが出ないが実際には追加できないようになっている。
-book.push[21];
-console.log(book);
+// book.push[21];
+// console.log(book[3]);
+
+
+// 列挙型（イーナム型）の記述方法。
+// 宣言はキャメルケースを使用する。
+// enumの中に文字列を指定しなければ添字のようなものが入る。
+var CoffeeSize;
+(function (CoffeeSize) {
+    CoffeeSize["SHORT"] = "SHORT";
+    CoffeeSize["TALL"] = "TALL";
+    CoffeeSize["GRANDE"] = "GRANDE";
+    CoffeeSize["VENTI"] = "VENTI";
+})(CoffeeSize || (CoffeeSize = {}));
+var coffee = {
+    hot: true,
+    size: CoffeeSize.GRANDE
+};
