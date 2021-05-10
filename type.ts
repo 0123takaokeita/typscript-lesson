@@ -33,18 +33,18 @@ const person: {
   name: string;
   age: number;
 } = {
-  name:'Jack',
+  name: 'Jack',
   age: 21
 }
 
 // 配列型
-const fruits: string[] = ['aple','banana','grape']
+const fruits: string[] = ['aple', 'banana', 'grape']
 const fruit = fruits[0];
 // stringが使用するメソッドが使用できる。
 fruit.length
 
 // tuple型を使用して順番を固定できる。
-const book: [string,number, boolean] = ['business', 1500, false];
+const book: [string, number, boolean] = ['business', 1500, false];
 // ここではエラーが出ないが実際には追加できないようになっている。
 // book.push[21];
 // console.log(book[3]);
@@ -61,7 +61,7 @@ enum CoffeeSize {
 
 const coffee = {
   hot: true,
-  size:CoffeeSize.GRANDE
+  size: CoffeeSize.GRANDE
 }
 
 // any型について
@@ -101,3 +101,12 @@ let clothSizes: ClothSize = 'large';
 function add(num1: number, num2: number): number {
   return num1 + num2
 }
+
+// void型について
+function sayHello(): void {
+  console.log('hello');
+  return;
+}
+
+console.log(sayHello());
+let tmp: void;

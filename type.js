@@ -70,3 +70,13 @@ var cloth = {
     size: 'medium'
 };
 var clothSizes = 'large';
+// 関数に型をつける。
+function add(num1, num2) {
+    return num1 + num2;
+}
+// void型について
+function sayHello() {
+    console.log('hello');
+}
+console.log(sayHello());
+var tmp;
