@@ -117,3 +117,13 @@ const anotherAdd: (n1: number, n2: number) => number = function(num1: number, nu
 };
 const doubleNumber: (num: number) => number = num => num * 2;
 
+
+// callback関数
+function doubleAndHandle(num: number, cb: (num: number) => number): void {
+  const doubleNum = cb(num * 2);
+  console.log(num * 2);
+}
+doubleAndHandle(21, doubleNum => {
+  return doubleNum;
+});
+
