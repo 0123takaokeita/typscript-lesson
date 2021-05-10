@@ -110,3 +110,10 @@ function sayHello(): void {
 
 console.log(sayHello());
 let tmp: void;
+
+// アロー関数の使い方
+const anotherAdd: (n1: number, n2: number) => number = function(num1: number, num2: number){
+  return num1 + num2;
+};
+const doubleNumber: (num: number) => number = num => num * 2;
+
