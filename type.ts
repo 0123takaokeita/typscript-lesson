@@ -78,3 +78,17 @@ anything.aaa = 'aaa'
 let unionType: number | string = 10;
 // 配列で使用することもできる。
 let unionTypes: (number | string)[] = [21, 'hello']
+
+// constを使用するとliteral型になる。
+const apple: 'apple' = 'apple';
+
+// union型とliterarl型を組み合わすことでenum型を作ることもできる。
+let clothSize: 'small' | 'medium' | 'large' = 'large';
+const cloth: {
+  color: string;
+  size: 'small' | 'medium' | 'large'
+} = {
+  color: 'white',
+  size: 'medium'
+}
+
