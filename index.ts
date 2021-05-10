@@ -1,3 +1,5 @@
+import axios from 'axios';
+
 let hellow : string = "hello";
 console.log(hellow);
 
