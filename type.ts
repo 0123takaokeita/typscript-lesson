@@ -64,6 +64,16 @@ const coffee = {
   size:CoffeeSize.GRANDE
 }
 
+// any型について
+// 何でも代入できてしまう型
+// jsから移行するプロジェクトなどのときは便利だが頼らないように使用！
+let anything: any = true;
+anything = 'hello';
+anything = ['hello', 33, true]
+anything = {};
+anything.aaa = 'aaa'
+
+
 
 
 
