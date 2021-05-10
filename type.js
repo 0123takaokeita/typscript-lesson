@@ -30,3 +30,8 @@ var fruits = ['aple', 'banana', 'grape'];
 var fruit = fruits[0];
 // stringが使用するメソッドが使用できる。
 fruit.length;
+// tuple型を使用して順番を固定できる。
+var book = ['business', 1500, false];
+// ここではエラーが出ないが実際には追加できないようになっている。
+book.push[21];
+console.log(book);

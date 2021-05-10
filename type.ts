@@ -44,6 +44,14 @@ const fruit = fruits[0];
 // stringが使用するメソッドが使用できる。
 fruit.length
 
+// tuple型を使用して順番を固定できる。
+const book: [string,number, boolean] = ['business', 1500, false];
+// ここではエラーが出ないが実際には追加できないようになっている。
+// book.push[21];
+// console.log(book[3]);
+
+
+
 
 
 
