@@ -73,8 +73,8 @@ anything = ['hello', 33, true]
 anything = {};
 anything.aaa = 'aaa'
 
-
-
-
-
-
+// union型について
+// 文字も数字も入れたいときに使用できる。
+let unionType: number | string = 10;
+// 配列で使用することもできる。
+let unionTypes: (number | string)[] = [21, 'hello']
