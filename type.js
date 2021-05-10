@@ -34,8 +34,6 @@ var book = ['business', 1500, false];
 // ここではエラーが出ないが実際には追加できないようになっている。
 // book.push[21];
 // console.log(book[3]);
-
-
 // 列挙型（イーナム型）の記述方法。
 // 宣言はキャメルケースを使用する。
 // enumの中に文字列を指定しなければ添字のようなものが入る。
@@ -50,3 +48,25 @@ var coffee = {
     hot: true,
     size: CoffeeSize.GRANDE
 };
+// any型について
+// 何でも代入できてしまう型
+// jsから移行するプロジェクトなどのときは便利だが頼らないように使用！
+var anything = true;
+anything = 'hello';
+anything = ['hello', 33, true];
+anything = {};
+anything.aaa = 'aaa';
+// union型について
+// 文字も数字も入れたいときに使用できる。
+var unionType = 10;
+// 配列で使用することもできる。
+var unionTypes = [21, 'hello'];
+// constを使用するとliteral型になる。
+var apple = 'apple';
+// union型とliterarl型を組み合わすことでenum型を作ることもできる。
+var clothSize = 'large';
+var cloth = {
+    color: 'white',
+    size: 'medium'
+};
+var clothSizes = 'large';

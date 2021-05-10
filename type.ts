@@ -92,3 +92,6 @@ const cloth: {
   size: 'medium'
 }
 
+// エイリアス型。型の変数を作成することができる。
+type ClothSize = 'small' | 'medium' | 'large';
+let clothSizes: ClothSize = 'large';
