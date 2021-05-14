@@ -77,6 +77,36 @@ function add(num1, num2) {
 // void型について
 function sayHello() {
     console.log('hello');
+    return;
 }
 console.log(sayHello());
 var tmp;
+// アロー関数の使い方
+var anotherAdd = function (num1, num2) {
+    return num1 + num2;
+};
+var doubleNumber = function (num) { return num * 2; };
+// callback関数
+function doubleAndHandle(num, cb) {
+    var doubleNum = cb(num * 2);
+    console.log(num * 2);
+}
+doubleAndHandle(21, function (doubleNum) {
+    return doubleNum;
+});
+// unknown型
+var unknownInput;
+var anyInput;
+var text;
+unknownInput = 'hello';
+unknownInput = 21;
+unknownInput = true;
+text = anyInput;
+if (typeof unknownInput === 'string') {
+    text = unknownInput;
+}
+// never型
+function error(message) {
+    throw new Error(message);
+}
+console.log(error('this is error'));
